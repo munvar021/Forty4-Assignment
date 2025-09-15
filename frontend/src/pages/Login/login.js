@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    axios.post('http://localhost:8080/api/auth/login', data)
+    axios.post('https://forty4-assignment.onrender.com/api/auth/login', data)
       .then(response => {
         // Assuming the backend returns a token or user data on successful login
         console.log(response.data);
