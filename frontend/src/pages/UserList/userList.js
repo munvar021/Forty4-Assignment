@@ -11,7 +11,7 @@ const UserList = () => {
   }, []);
 
   const fetchUsers = () => {
-    axios.get('http://localhost:8080/api/users')
+    axios.get('https://forty4-assignment.onrender.com/api/users')
       .then(response => {
         setUsers(response.data.data);
       })
