@@ -12,7 +12,7 @@ const UserForm = () => {
 
   useEffect(() => {
     if (isEditMode) {
-      axios.get(`http://localhost:8080/api/users/${id}`)
+      axios.get(`https://forty4-assignment.onrender.com/api/users/${id}`)
         .then(response => {
           const user = response.data.data;
           setValue('name', user.name);
