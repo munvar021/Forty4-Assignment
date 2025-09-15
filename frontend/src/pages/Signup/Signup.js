@@ -9,7 +9,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    axios.post('https://forty4-assignment.onrender.com/api/auth/signup', data)
+    axios.post('https://forty4-assignment-backend.onrender.com/api/auth/signup', data)
       .then(() => {
         navigate('/login');
       })
